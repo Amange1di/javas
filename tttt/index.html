@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><div class="container">
+<header>
+    <nav>
+
+        <ul>
+            <li><a href="#">Курсу</a>
+                <ul>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JavaScript</a>
+                        <ul>
+                            <li><a href="#">JQuery</a></li>
+                            <li><a href="#">Node.js</a></li>
+                        </ul></li>
+                </ul></li>
+
+            <li><a href="#">Контакты</a>
+                <ul><a href="">709436 310</a></ul></li>
+            <li><a href="#"> О нас</a>
+                <ul><li><a href="">Жолдошбеков Тилек</a></li>
+                    <li><a href="">Повтас-9-2-21</a></li></ul></li>
+        </ul></nav>
+</header>
+
+    <div class="bir">
+        <ul>
+            <p>.</p>
+          <h1>JavaScript</h1>
+        </ul>
+        <main>
+            <p>.</p>
+            <li><a href="#Введение">Введение</a><br></li>
+            <li><a href="#Что">Что вы уже должны знать</a><br></li>
+            <li><a href="#Java">JavaScript и Java</a><br></li>
+            <li><a href="#Привет">Привет, мир</a><br></li>
+            <li><a href="#Переменные">Переменные</a><br></li>
+            <li><a href="#Объявление">Объявление переменных</a><br></li>
+            <li> <a href="#Область">Область действия переменной</a><br></li>
+            <li><a href="#Глобальные">Глобальные переменные</a><br></li>
+            <li><a href="#Константы">Константы</a><br></li>
+            <li><a href="#данных">Типы данных</a><br></li>
+            <li> <a href="#ifelse">оператор if-else</a><br></li>
+            <li><a href="#while">оператор while</a><br></li>
+            <li> <a href="#функций">Объявления функций</a><br></li>
+            <li> <a href="#переключения">Оператор переключения</a><br></li>
+        </main>
+    </div>
+    <div class="eki">
+        <ul id="Введение">
+          <h1>Введение</h1>
+          <hr>
+          <p>JavaScript — это кроссплатформенный объектно-ориентированный язык сценариев. Это небольшой и легкий язык. Внутри хост-среды (например, веб-браузера) JavaScript может быть подключен к объектам его среды, чтобы обеспечить программный контроль над ними.</p>
+           <p>JavaScript содержит стандартную библиотеку объектов, таких как Array, Date и Math, а также основной набор языковых элементов, таких как операторы, структуры управления и инструкции. Базовый JavaScript можно расширять для различных целей, дополняя его дополнительными объектами; например:</p>
+          <nav>
+           <p>      * Клиентский JavaScript расширяет основной язык, предоставляя объекты для управления браузером и его объектной моделью документа (DOM).</p>
+            <p>* Серверный JavaScript расширяет основной язык, предоставляя объекты, необходимые для запуска JavaScript на сервере.</p>
+          </nav>
+      </ul>
+        <ul id="Что">
+            <h1>Что вы уже должны знать</h1>
+            <hr>
+            <p>В этом руководстве предполагается, что у вас есть следующий базовый опыт:</p>
+            <nav><p>* Общее представление об Интернете и Всемирной паутине (WWW).</p>
+            <p>* Хорошее знание языка гипертекстовой разметки (HTML).</p>
+            <p>* Некоторый опыт программирования. Если вы новичок в программировании, попробуйте одно из руководств по JavaScript, связанных с главной страницей.</p></nav>
+        </ul>
+        <ul id="Java">
+            <h1>JavaScript и Java</h1>
+            <hr>
+            <p>JavaScript и Java в чем-то схожи, но в чем-то принципиально различаются. Язык JavaScript похож на Java, но не имеет статической типизации Java и строгой проверки типов. JavaScript соответствует большинству синтаксиса выражений Java, соглашениям об именах и базовым конструкциям потока управления, что и стало причиной того, что он был переименован из LiveScript в JavaScript.</p>
+            <p>В отличие от системы классов времени компиляции Java, построенной посредством объявлений, JavaScript поддерживает систему времени выполнения, основанную на небольшом количестве типов данных, представляющих числовые, логические и строковые значения. В JavaScript используется объектная модель на основе прототипов вместо более распространенной объектной модели на основе классов. Модель на основе прототипов обеспечивает динамическое наследование; то есть то, что наследуется, может различаться для отдельных объектов. JavaScript также поддерживает функции без каких-либо особых декларативных требований. Функции могут быть свойствами объектов и выполняться как свободно типизированные методы.</p>
+            <p>JavaScript — язык очень свободной формы по сравнению с Java. Вам не обязательно объявлять все переменные, классы и методы. Вам не нужно беспокоиться о том, являются ли методы общедоступными, частными или защищенными, и вам не нужно реализовывать интерфейсы. Переменные, параметры и типы возвращаемых функций не типизируются явно.</p>
+        </ul>
+        <ul id="Привет">
+            <h1>Привет, мир</h1>
+            <hr>
+            <p>Чтобы начать писать JavaScript, откройте Блокнот и напишите свой первый JavaScript-код «Hello world»:</p>
+            <div class="pr">
+                <nav></nav>
+                <ul>
+
+
+               <p> &emsp13;<span style="color: blue"> function</span> <span style="color:   darkgreen">greetMe</span> (yourName)<br>
+               <span style="color: black"> &emsp13;{</span><br>
+                   &emsp13;&emsp13;&emsp13; <span style="color: darkgreen">alert</span>(<span style="color: darkgreen">"Hello"</span><span style="color: chocolate">+</span>yourName);
+                   <br>
+                   <span style="color: black"> &emsp13;}</span><br>
+                   &emsp13; <span style="color: darkgreen">greetMe</span>(<span style="color: darkgreen">"World"</span>
+
+               </p>
+              </ul>
+            </div>
+            <p>Выберите код на панели и нажмите Ctrl+R, чтобы увидеть, как он разворачивается в вашем браузере!</p>
+        </ul>
+        <ul id="Переменные">
+            <h1>Переменные</h1>
+            <hr>
+            <p>Вы используете переменные как символические имена значений в вашем приложении. Имена переменных, называемые идентификаторами, подчиняются определенным правилам.   </p>
+        <p>Идентификатор JavaScript должен начинаться с буквы, подчеркивания (_) или знака доллара ($); последующие символы также могут быть цифрами (0–9). Поскольку JavaScript
+            чувствителен к регистру, буквы включают символы от «A» до «Z» (прописные) и символы от «a» до «z» (строчные).</p>
+      <p>В идентификаторах можно использовать буквы ISO 8859-1 или Unicode, такие как å и ü. Вы также можете использовать escape-последовательности Юникода в качестве символов
+          в идентификаторах. Некоторые примеры допустимых имен: Number_hits, temp99 и _name.</p>
+        </ul>
+        <ul id="Объявление">
+            <h1>Объявление переменных</h1>
+            <hr>
+            <p>Вы можете объявить переменную тремя способами:
+            </p>
+        <p>С помощью ключевого слова var. Например,</p>
+            <div class="pr">
+                <nav></nav>
+                <ul>
+                    <p><span style="color: blue">var</span> x <span style="color: chocolate">=</span><span style="color: crimson">42</span> ;</p>
+                </ul>
+            </div>
+            <p>Этот синтаксис можно использовать для объявления как локальных, так и глобальных переменных.</p>
+            <p>Просто присвоив ему значение. Например,</p>
+            <div class="pr">
+                <nav></nav>
+                <ul>
+                    <p> x <span style="color: chocolate">=</span><span style="color: crimson">42</span> ;</p>
+                </ul>
+            </div>
+            <p>Здесь всегда объявляется глобальная переменная. Он генерирует строгое предупреждение JavaScript. Вам не следует использовать этот вариант.</p>
+            <p>С ключевым словом пусть. Например,</p>
+            <div class="pr">
+                <nav></nav>
+                <ul>
+                    <p><span style="color: blue">let</span> x <span style="color: chocolate">=</span><span style="color: crimson">42</span> ;</p>
+                </ul>
+            </div>
+             <p> Этот синтаксис можно использовать для объявления локальной переменной области блока. См. раздел Область действия переменной ниже.</p>
+        </ul>
+        <ul id="Область">
+            <h1>Область действия переменной</h1>
+            <hr>
+            <p>Когда вы объявляете переменную вне какой-либо функции, она называется глобальной переменной, поскольку она доступна для любого другого кода в текущем документе.
+                Когда вы объявляете переменную внутри функции, она называется локальной переменной, поскольку доступна только внутри этой функции.</p>
+            <p>JavaScript до ECMAScript 2015 не имеет области действия блочного оператора; скорее, переменная, объявленная внутри блока, является локальной по отношению к функции (или глобальной области видимости), внутри которой находится блок. Например, следующий код зарегистрирует 5, поскольку областью действия
+                x является функция (или глобальный контекст), внутри которой объявлен x, а не блок, который в данном случае является оператором if.</p>
+            <div class="pr">
+                <nav></nav>
+                <ul>
+                    <p><span style="color: blue">if</span>  ( <span style="color: crimson"> true</span> ) <span style="color: black"> { <span style="color: blue">var</span> x <span style="color: chocolate">=</span> </span> <span style="color: crimson">5</span> ;<span style="color: black">}</span> <br>
+                    <span style="color: #142c38">console.</span><span style="color: darkgreen">log</span> (x)</p>
+                </ul>
+            </div>
+
+        </ul>
+        <ul id="Глобальные">
+            <h1>Глобальные переменные</h1>
+            <hr>
+            <p>Глобальные переменные фактически являются свойствами глобального объекта. На веб-страницах глобальным объектом является окно, поэтому вы можете устанавливать глобальные переменные и получать к ним доступ, используя синтаксис window.variable.</p>
+             <p>Следовательно, вы можете получить доступ к глобальным переменным, объявленным в одном окне или фрейме, из другого окна или фрейма, указав имя окна или фрейма. Например, если в документе объявлена ​​переменная с именем phoneNumber,
+                 вы можете ссылаться на эту переменную из iframe как родительский.phoneNumber.</p>
+        </ul>
+        <ul id="Константы">
+             <h1>Константы</h1>
+             <hr>
+             <p>Вы можете создать именованную константу, доступную только для чтения, с помощью ключевого слова const. Синтаксис постоянного идентификатора такой же, как и для переменного идентификатора:
+                 он должен начинаться с буквы, знака подчеркивания или доллара и может содержать буквенные, числовые символы или символы подчеркивания.</p>
+         <div class="pr">
+             <nav></nav>
+             <ul>
+                 <p>
+                     <span style="color: blue">const</span>  <span style="color: crimson"> PI</span> <span style="color: chocolate">=</span> <span style="color: crimson">3.14</span>
+                 </p>
+             </ul>
+         </div>
+           <p>Константа не может изменить значение посредством присвоения или быть повторно объявлена ​​во время работы сценария. Его необходимо инициализировать значением.</p>
+      <p>Правила области действия для констант такие же, как и для переменных области действия блока let. Если ключевое слово const опущено, предполагается, что идентификатор представляет переменную.</p>
+       <p>Вы не можете объявить константу с тем же именем, что и функцию или переменную в той же области видимости. Например:</p>
+        <div class="pr">
+            <nav></nav>
+        <ul>
+            <p><span style="color: blue">fynction</span><span style="color: darkgreen"> f</span> ()<span style="color: black"> { };</span>
+            <p><span style="color: blue">fynction</span><span style="color: darkgreen"> f</span> <span style="color: chocolate">=</span> 5
+
+
+
+            </p>
+        </ul>
+
+        </div>
+             <p>Однако атрибуты объекта не защищены, поэтому следующий оператор выполняется без проблем.</p>
+             <div class="pr">
+                 <nav></nav>
+                 <ul><p>  <span style="color: blue">const</span> <span style="color: crimson">  MY_OBJECT</span><span style="color: chocolate"> =</span> { <span style="color: darkgreen"> "key": "value"</span>};<p>
+                    <p> <span style="color: crimson">  MY_OBJECT</span>.key<span style="color: chocolate"> =</span> <span style="color: darkgreen"> "otherValue"</span> ;
+
+                 </p></ul>
+             </div>
+
+
+
+
+        </ul>
+        <ul id="данных">
+            <h1>Типы данных</h1>
+            <hr>
+            <p>Последний стандарт ECMAScript определяет семь типов данных:</p>
+            <nav>
+                <p>Шесть типов данных, которые являются примитивами</p>
+                <p>* Логическое значение: истина и ложь.</p>
+                <p>* null: специальное ключевое слово, обозначающее нулевое значение.</p>
+                <p>* неопределенный</p>
+                <p>* Номер: 42 или 3.14159.</p>
+                 <p>* Строка: например: «Хауди»</p>
+                <p>* Символ (новое в ECMAScript 2015)</p>
+            </nav>
+            <p>Хотя этих типов данных относительно мало, они позволяют вам выполнять полезные функции с вашими приложениями. Объекты и функции — другие фундаментальные элементы языка.
+                Вы можете думать об объектах как об именованных контейнерах для значений, а о функциях как о процедурах, которые может выполнять ваше приложение.</p>
+
+        </ul>
+        <ul id="ifelse">
+            <h1>оператор if-else</h1>
+            <hr>
+            <p>Используйте оператор if для выполнения оператора, если логическое
+                условие истинно. Используйте необязательное предложение else для выполнения оператора, если условие ложно. Оператор if выглядит следующим образом:</p>
+              <div class="pr">
+                  <nav></nav>
+                  <ul><p>
+                      <span style="color: blue">if</span>(condition)
+                       <span style=" color: black">{</span><br> </p>
+                      <p>  statement_1;<br> </p>
+                      <p>  <span style=" color: black">}</span>
+                      <span style="color: blue">else</span> </p>
+                      <p> <span style=" color: black">{</span><br> </p>
+                      <p> statement_2;<br> </p>
+                      <p><span style=" color: black">}</span><br>
+
+                  </p></ul>
+              </div>
+            <p>условие может быть любым выражением, которое имеет значение true или false. См. Boolean для объяснения того, что оценивается как true и false. Если условие оценивается как истинное, выполняется оператор_1;
+                в противном случае выполняется оператор_2. Оператор_1 и оператор_2 могут быть любым оператором, включая дополнительные вложенные операторы if.</p>
+<p>Вы также можете объединить операторы, используя else if для последовательной проверки нескольких условий, как показано ниже:</p>
+            <div class="pr">
+                <nav></nav>
+                <ul><p>
+                    <span style="color: blue">if</span>(condition_1)
+                    <span style=" color: black">{</span><br> </p>
+                    <p>  statement_1;<br> </p>
+                    <p>  <span style=" color: black">}</span>
+                        <span style="color: blue">else if</span> (condition_2) </p>
+                    <p> <span style=" color: black">{</span><br> </p>
+                    <p> statement_2;<br> </p>
+                    <p><span style=" color: black">}</span> <span style="color: blue">else</span> </p>
+                    <p> <span style=" color: black">{</span><br> </p>
+                    <p> statement_last; }<br> </p>
+
+                    </p></ul>
+            </div>
+            <p>В случае нескольких условий будет выполнено только первое логическое условие, которое имеет значение true. Чтобы выполнить несколько операторов, сгруппируйте их внутри оператора блока
+                ({ ... }). В общем, хорошей практикой всегда является использование блочных операторов, особенно при вложении операторов if:</p>
+
+            <div class="pr">
+                <nav></nav>
+                <ul><p>
+                    <span style="color: blue">if</span>(condition)
+                    <span style=" color: black">{</span><br> </p>
+                    <p>  statement_1_runs_if_condition_is_true;<br>
+                        statement_2_runs_if_condition_is_true; <br> </p>
+                    <p>  <span style=" color: black">}</span>
+                        <span style="color: blue">else</span> </p>
+                    <p> <span style=" color: black">{</span><br> </p>
+                    <p> statement_3_runs_if_condition_is_false;<br>
+                        statement_4_runs_if_condition_is_false;  </p>
+                    <p><span style=" color: black">}</span><br>
+
+                    </p></ul>
+            </div>
+         <p>В условном выражении желательно не использовать простые присваивания, поскольку при просмотре кода присваивание можно спутать с равенством. Например, не используйте следующий код:</p>
+          <div class="pr"><nav></nav>
+              <span style="color: blue">if</span>((x=y))
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+        <ul id="while">
+            <h1>Пока заявление</h1>
+            <hr>
+        <p>Если условие становится ложным, оператор внутри цикла прекращает выполнение и управление передается оператору, следующему за циклом.</p>
+            <p>Проверка условия происходит до выполнения инструкции в цикле. Если условие возвращает true, оператор выполняется и условие
+                проверяется снова. Если условие возвращает false, выполнение останавливается и управление передается следующему оператору while.</p>
+<p>Чтобы выполнить несколько операторов, используйте оператор блока ({ ... }), чтобы сгруппировать эти операторы.</p>
+<p>Пример:
+
+    Следующий цикл while выполняется до тех пор, пока n меньше трех:</p>
+            <div class="pr">
+                <nav></nav>
+
+                <ul>
+                    <p>
+                        <span style="color: blue">var</span> n <span style="color: chocolate">=</span> <span style="color: crimson">0</span>
+                        <span style="color: blue">var</span> x <span style="color: chocolate">=</span> <span style="color: crimson">0</span>
+                        <span style="color: blue">while</span> ( n <span style="color: chocolate"><</span> <span style="color: crimson">3</span><br></p>
+                       <p> { <br>
+                            &emsp13;n<span style="color: chocolate">++</span>; x<span style="color: chocolate">+=</span>n;<br>
+                        }
+
+
+                    </p>
+                </ul>
+            </div>
+            <p>На каждой итерации цикл увеличивает n и добавляет это значение к x. Следовательно, x и n принимают следующие значения:</p>
+            <nav>
+                <p>* После первого прохода: n = 1 и x = 1</p>
+                <p>* После второго прохода: n = 2 и x = 3</p>
+                <p>* После третьего прохода: n = 3 и x = 6</p>
+
+            </nav>
+            <p>После завершения третьего прохода условие n < 3 перестает быть истинным, поэтому цикл завершается.</p>
+        </ul>
+        <ul id="функций">
+            <h1>Объявления функций</h1>
+            <hr>
+<p>пределение функции (также называемое объявлением функции или оператором функции) состоит из ключевого слова function, за которым следует:</p>
+            <nav>
+                <p>* Имя функции.</p>
+                <p>* Список аргументов функции, заключенный в круглые скобки и разделенный запятыми.</p>
+                <p>*  Операторы JavaScript, определяющие функцию, заключенные в фигурные скобки { }.</p>
+            </nav>
+<p>Например, следующий код определяет простую функцию с именем Square:</p>
+            <div class="pr">
+                <nav></nav>
+                <ul>
+                    <p><span style="color: blue">function</span> <span style="color: darkgreen">square</span>(number)
+                        </p>
+                    <p>{<br><span style="color: blue">return</span> number * number; <br>}</p>
+                </ul>
+            </div>
+<p>Функция Square принимает один аргумент, называемый числом. Функция состоит из одного оператора, который требует вернуть
+    аргумент функции (то есть число), умноженный на себя. Оператор return указывает значение, возвращаемое функцией.</p>
+            <div class="pr">
+                <nav></nav>
+                <ul>
+
+                    <p><span style="color: blue">return</span> number * number; </p>
+                </ul>
+            </div>
+<p>Примитивные параметры (например, числа) передаются функциям по значению; значение передается функции, но если функция меняет значение параметра, это изменение не отражается глобально или в вызывающей функции.</p>
+
+
+
+
+
+
+        </ul>
+        <ul id="переключения">
+<h1>Оператор переключения</h1>
+            <hr>
+            <p>Используйте этот <span style="color: #ff0039">switch</span> оператор, чтобы выбрать один из множества блоков кода для выполнения.</p>
+            <p>Вот как это работает:</p>
+            <nav>
+            <p>* Выражение переключения оценивается один раз.</p>
+            <p>* Значение выражения сравнивается со значениями каждого случая.</p>
+            <p>* Если есть совпадение, соответствующий блок кода выполняется.</p>
+            <p>* Если совпадений нет, выполняется блок кода по умолчанию.</p>
+            </nav>
+            <p>Метод <span style="color: #ff0039">getDay()</span> возвращает день недели в виде числа от 0 до 6.
+                (Воскресенье=0, Понедельник=1, Вторник=2 ..)
+                В этом примере номер дня недели используется для вычисления названия дня недели:</p>
+            <div class="pr">
+            <nav></nav>
+            <ul>
+                <p><span style="color: #0013de">switch</span>(<span style="color: #0013de">new </span>Date()){<br>
+                    <span style="color: #0013de">case</span><span style="color: #f50202"> 0</span> <br>
+                    day= <span style="color: #b44a1d">"Sunday"</span>; <br>
+                    <span style="color: #0013de">break</span>
+
+                    <span style="color: #0013de">switch</span>(<span style="color: #0013de">new </span>Date()){<br>
+                    <span style="color: #0013de">case</span><span style="color: #f50202"> 1</span> <br>
+                    day= <span style="color: #b44a1d">"Monday"</span>; <br>
+                    <span style="color: #0013de">break</span>
+
+                    <span style="color: #0013de">switch</span>(<span style="color: #0013de">new </span>Date()){<br>
+                    <span style="color: #0013de">case</span><span style="color: #f50202"> 2</span> <br>
+                    day= <span style="color: #b44a1d">"Tuesday"</span>; <br>
+                    <span style="color: #0013de">break</span>
+
+                    <span style="color: #0013de">switch</span>(<span style="color: #0013de">new </span>Date()){<br>
+                    <span style="color: #0013de">case</span><span style="color: #f50202"> 3</span> <br>
+                    day= <span style="color: #b44a1d">"Wednesday"</span>; <br>
+                    <span style="color: #0013de">break</span>
+
+                    <span style="color: #0013de">switch</span>(<span style="color: #0013de">new </span>Date()){<br>
+                    <span style="color: #0013de">case</span><span style="color: #f50202"> 4</span> <br>
+                    day= <span style="color: #b44a1d">"Thursday"</span>; <br>
+                    <span style="color: #0013de">break</span>
+
+                    <span style="color: #0013de">switch</span>(<span style="color: #0013de">new </span>Date()){<br>
+                    <span style="color: #0013de">case</span><span style="color: #f50202"> 5</span> <br>
+                    day= <span style="color: #b44a1d">"Friday"</span>; <br>
+                    <span style="color: #0013de">break</span>
+
+                    <span style="color: #0013de">switch</span>(<span style="color: #0013de">new </span>Date()){<br>
+                    <span style="color: #0013de">case</span><span style="color: #f50202"> 6</span> <br>
+                    day= <span style="color: #b44a1d">"Saturday"</span>; <br>
+                    <span style="color: #0013de">break</span></p>
+
+            </ul>
+        </div>
+            <p>Когда JavaScript достигает breakключевого слова, он выходит из блока переключателей.</p>
+            <p>Это остановит выполнение внутри блока переключателей.</p>
+            <p>Последний корпус в блоке переключателей ломать не нужно. Блок в любом случае ломается (заканчивается).</p>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
